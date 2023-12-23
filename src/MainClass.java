@@ -6,7 +6,7 @@ public class MainClass {
   public static void main(String arg[]) {
     List<Student> studentList = insertData();
 
-
+    System.out.println("HI");
   }
 
   public static List<Student> insertData(){

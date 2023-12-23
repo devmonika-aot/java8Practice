@@ -6,6 +6,7 @@ import java.time.LocalDate;
 public class Student {
 
   private int id;
+
   private String name;
   private Double marks;
   private LocalDate dob;
