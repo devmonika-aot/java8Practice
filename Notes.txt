@@ -1,0 +1,40 @@
+1) Advantage of @FunctionalInterface annotation.
+-> It make interface as type safe , So basically with the help of @FunctionalInterface
+   1) If we don't add any abstract method, will show compilation error.
+      It is mandatory to give only one abstract method.
+   2) we can't give more than one abstract method.
+**************************************************
+-> default and static method.
+   static method: can't override to implementation class.
+   default method: can be overridden.
+
+ 1
+ Basic
+ It is a static method which belongs to the interface only. We can write implementation of this method in interface itself
+ It is a method with default keyword and class can override this method
+ 2
+ Method Invocation
+ Static method can invoke only on  interface class not on class.
+ It can be invoked on interface as well as class
+ 3
+ Method Name
+ Interface and implementing class , both can have static method with the same name without overriding each other.
+ We can override the default method in implementing class
+ 4.
+ Use Case
+ It can be used as a utility method
+ It can be used to provide common functionality in all implementing classes
+*****************************************************
+More on @default method:
+    In the implementation class, we can have method name with same as of Interface Static method but
+    we can't use @Override word.
+
+****************************************************
+How we can call default and static method of Interface without overriding.
+-> for static we can use of InterfaceName.MethodName()
+-> for default method, we can use super word to call interface default method.
+   e.g: FunctionalInterface.super.helloDefault();
+
+
+
+

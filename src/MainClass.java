@@ -1,3 +1,6 @@
+import service.FunctionalInterface;
+import service.FunctionalInterfaceImpl;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -5,7 +8,12 @@ import java.util.List;
 public class MainClass {
   public static void main(String arg[]) {
     List<Student> studentList = insertData();
-
+    FunctionalInterfaceImpl functionalInterface = new FunctionalInterfaceImpl();
+    functionalInterface.test();
+    System.out.println(functionalInterface.helloDefault());
+    System.out.println(FunctionalInterfaceImpl.hiStatic());
+    // ******* Interface method calling******
+    System.out.println(FunctionalInterface.hiStatic());
 
   }
 
