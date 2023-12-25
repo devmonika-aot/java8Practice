@@ -3,7 +3,7 @@
 import java.time.LocalDate;
 
 
-public class Student implements  Comparable<Student>{
+public class StudentComparable implements  Comparable<StudentComparable>{
 
   private int id;
 
@@ -11,7 +11,7 @@ public class Student implements  Comparable<Student>{
   private Double marks;
   private LocalDate dob;
 
-  public Student(int id, String name, Double marks, LocalDate dob) {
+  public StudentComparable(int id, String name, Double marks, LocalDate dob) {
     this.id = id;
     this.name = name;
     this.marks = marks;
@@ -61,7 +61,7 @@ public class Student implements  Comparable<Student>{
   }
 
   @Override
-  public int compareTo(Student o) {
+  public int compareTo(StudentComparable o) {
     return this.getMarks().compareTo(o.getMarks());
   }
 }

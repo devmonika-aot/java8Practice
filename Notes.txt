@@ -1,0 +1,12 @@
+1) Sorting using Comparator and Comparable.
+    Comparable:
+       We implements Comparable on POJO and override method compareTo() to implement sorting logic.
+       To call compareTo(), when we use Collections.sort(List<PoJo>), It will call compare to sorting.
+    Comparator:
+       Comparator is Function Interface which has only one abstract method compare().
+       So we can implement sorting logic using lambda expression as It has only one abstract method.
+2)  Lis of Functional Interface which can be used for lambda expression:
+        Comparator(compare())
+        Comparable(compareTo())
+        Runnable(run())
+
