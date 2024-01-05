@@ -1,0 +1,29 @@
+//Different way to creating Stream.
+    1) From Arrays
+    2) From List
+    3) From String
+    4) From  builder
+// Intermediate Operations
+    1) Difference between Map and FlatMap
+    Stream.flatMap, as it can be guessed by its name, is the combination of a map and a flat operation.
+    That means that you first apply a function to your elements, and then flatten it. Stream.map
+    only applies a function to the stream without flattening the stream.
+    flatmap = map + flatern
+    To understand what flattening a stream consists in, consider a structure like [ [1,2,3],[4,5,6],[7,8,9] ]
+    which has "two levels". Flattening this means transforming it in a "one level"
+    structure : [ 1,2,3,4,5,6,7,8,9 ]
+
+    2) Diff between Map and Filter.
+    Map: produces stream which is only passes inside map()
+    e.g map(e -> e.getNames()), only List<String> of Name will be produce.
+    Filter: produces stream of whole data object passes through filter().
+    e.g filter(e->e.startWith("S)", It will produce List<Student>
+
+// Terminal Operations
+
+
+
+//Parallel Stream and flatmap
+
+
+

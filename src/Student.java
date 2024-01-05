@@ -1,7 +1,5 @@
-
-
 import java.time.LocalDate;
-
+import java.util.List;
 
 public class Student {
 
@@ -9,12 +7,22 @@ public class Student {
   private String name;
   private Double marks;
   private LocalDate dob;
+  private List<Integer> rollList;
 
-  public Student(int id, String name, Double marks, LocalDate dob) {
+  public Student(int id, String name, Double marks, LocalDate dob, List<Integer> rollList) {
     this.id = id;
     this.name = name;
     this.marks = marks;
     this.dob = dob;
+    this.rollList = rollList;
+  }
+
+  public List<Integer> getRollList() {
+    return rollList;
+  }
+
+  public void setRollList(List<Integer> rollList) {
+    this.rollList = rollList;
   }
 
   public int getId() {
@@ -56,6 +64,7 @@ public class Student {
             ", name='" + name + '\'' +
             ", marks=" + marks +
             ", dob=" + dob +
+            ", rollList=" + rollList +
             '}';
   }
 }
